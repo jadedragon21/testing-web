@@ -8,23 +8,23 @@ import org.springframework.web.bind.annotation.RestController;
 
 //spring.io version
 
-//@Controller
-//public class HomeController {
-//
-//    @RequestMapping("/")
-//    public @ResponseBody
-//    String greeting() {
-//        return "Hello, World";
-//    }
-//
-//}
-
-//Lionel's version
-@RestController
+@Controller
 public class HomeController {
 
-    @GetMapping("/")
-    public String greeting() {
-        return "Hello world!";
+    @RequestMapping("/")
+    public @ResponseBody
+    String greeting() {
+        return "Hello, World";
     }
+
 }
+
+//Lionel's version
+//@RestController
+//public class HomeController {
+//
+//    @GetMapping("/")
+//    public String greeting() {
+//        return "Hello world!";
+//    }
+//}
